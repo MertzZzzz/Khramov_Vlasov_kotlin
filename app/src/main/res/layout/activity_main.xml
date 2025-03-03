@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Счетчики побед -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Счетчик побед компьютера -->
+        <TextView
+            android:id="@+id/computerScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Компьютер: 0"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Счетчик побед игрока -->
+        <TextView
+            android:id="@+id/playerScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Игрок: 0"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Результат игры -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сделайте выбор!"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Кнопки для выбора -->
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Камень"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бумага"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ножницы" />
+
+</LinearLayout>
